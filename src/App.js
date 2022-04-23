@@ -1,23 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { Clusters, Edge, Devices } from "./Routes";
+import { Home, Config, Analytics, Admin, MainLoginPage, Page404 } from "./Pages";
+import { SideBar, NavBar } from "./Components";
+import { SideBarData } from "./Components/SideBar/SideBarData";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Navigate,
+  Outlet,
+} from "react-router-dom";
+import "./App.css";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='app'>
+      <Router>
+        <NavBar></NavBar>
+
+        <div className='routes__container'>
+          <Routes>
+          
+            <Route path='/' element={<MainLoginPage />}/>
+            <Route path='/Config' element={<Config />}/>
+            <Route path='/Analytics' element={<Analytics />}/>
+{/* /* A nested route. */ }
+            <Route path='/Home' element={<Home />}>
+              <Route path='Clusters' element={<Clusters />} />
+              <Route path='Edge' element={<Edge />} />
+              <Route path='Devices' element={<Devices />} />
+            </Route>
+
+            <Route path='*' element={<Page404 />} />
+          </Routes>
+        </div>
+      </Router>
     </div>
   );
 }

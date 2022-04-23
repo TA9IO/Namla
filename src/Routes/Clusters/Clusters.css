@@ -1,0 +1,25 @@
+.table-summeray__container {
+  display: flex;
+}
+
+.graph {
+  margin: 0 auto;
+  width: 60%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 1px 1px 5px #ccc;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  margin-bottom: 20px;
+  /* flex-grow: 1; */
+}
+.table, .summeray{
+  /* flex-grow: 1; */
+  width: 50%;
+  height: 40%;
+}

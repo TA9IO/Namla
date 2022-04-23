@@ -1,0 +1,45 @@
+/* Making the notification icon 30px in size, and making the cursor a pointer when hovering over it. */
+.navigation-menu-notification-icon {
+  font-size: 30px;
+  margin-left: 150px;
+  cursor: pointer;
+}
+/**
+* this is just a Dummy styming it not responsice and dous not follow best practices
+* The notification counter is a circle that appears in the top right corner of the navbar.
+* It is a red circle with a number inside it.
+* The number is the number of notifications that the user has.
+*/
+
+
+/*  the notification counter */
+.notification-conter {
+  background-color: red;
+  height: 10px;
+  width: 10px;
+  position: absolute;
+  top: 18px;
+  right: 33px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.notification-menu-dropdonw {
+  position: absolute;
+  top: 50px;
+  right: 40px;
+}
+
+.notification-menu-dropdonw-header {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #e0e0e0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    width: 200px;
+    height: 300px;
+
+
+}
