@@ -1,3 +1,6 @@
+
+
+
 import React, { useState, useEffect } from "react";
 import { Line, Bar } from "react-chartjs-2";
 import "./graph.css";
@@ -6,20 +9,10 @@ import { Chart as ChartJS } from "chart.js/auto";
 
 function Graph({ graphData, data }) {
   // console.log(graphData.datasets[0].data);
-
   const first = React.useRef(Line)
-
-  const scroll = () => { 
-    
-    console.log("scroll");
-
-   }
-
   //  first.current.addEventListener("scroll", scroll);
-
   // console.log(first.current.chartArea);
   return (
-
     // resourses
     //===================================================================
     // chartjs.org/docs/
@@ -27,13 +20,12 @@ function Graph({ graphData, data }) {
     // this amazing youtube channel : https://www.youtube.com/c/ChartJS-tutorials
     // StackOverflow (not so good but helpfull 
     //===================================================================
-    <Line
+    <Bar
       data={graphData}
       ref={first}
       options={{
-
+        // in case  you like to see some cool transitions
         transitions: {
-
           // hide: {
           //   animations: {
           //     x: {
@@ -45,7 +37,6 @@ function Graph({ graphData, data }) {
           //   },
           // },
         },
-
         responsive: true,
         
         plugins: {
