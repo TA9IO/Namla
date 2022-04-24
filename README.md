@@ -23,7 +23,7 @@ This is simple dashboard built with React.js.
 
 ## UI descprition
 
- - Fixed Header including the logo, the navigation menu to the different sections, andthe alert notification
+ - Fixed Header including the logo, the navigation menu to the different sections, and the alert notification
 
 ![heaser](https://user-images.githubusercontent.com/93702837/164951948-6ffa771d-f0e7-4147-9230-62f6ee6e9782.PNG)
 
