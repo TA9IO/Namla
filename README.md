@@ -4,7 +4,7 @@
 
 ## Demo
 
-![alt text](https://ibb.co/gFxWqDH)
+![ezgif com-gif-maker (2)](https://user-images.githubusercontent.com/93702837/164951474-a8e2dade-9ae2-4a8b-bb43-b215afe6490e.gif)
 
 
 
