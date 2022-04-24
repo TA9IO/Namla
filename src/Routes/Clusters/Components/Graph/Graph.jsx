@@ -1,8 +1,5 @@
-
-
-
 import React, { useState, useEffect } from "react";
-import { Line, Bar } from "react-chartjs-2";
+import { Line } from "react-chartjs-2";
 import "./graph.css";
 import { Chart as ChartJS } from "chart.js/auto";
 // import ChartStreaming from "chartjs-plugin-streaming";
@@ -20,7 +17,7 @@ function Graph({ graphData, data }) {
     // this amazing youtube channel : https://www.youtube.com/c/ChartJS-tutorials
     // StackOverflow (not so good but helpfull 
     //===================================================================
-    <Bar
+    <Line
       data={graphData}
       ref={first}
       options={{
