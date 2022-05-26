@@ -10,6 +10,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ![ezgif com-gif-maker (2)](https://user-images.githubusercontent.com/93702837/164951474-a8e2dade-9ae2-4a8b-bb43-b215afe6490e.gif)
 
+## live Demo
+https://cute-squirrel-26687b.netlify.app/Home/Clusters
 
 ## Set Up
 ```
